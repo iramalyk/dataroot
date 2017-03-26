@@ -1,0 +1,551 @@
+@font-face {
+    font-family: "GothamRounded";
+    src: url('../fonts/GothamRounded-Bold.eot');
+    src: url('../fonts/GothamRounded-Bold.otf') format("opentype"),
+         url('../fonts/GothamRoundedBold_21016.ttf') format("truetype"),
+         url('../fonts/GothamRounded-Bold.woff') format("woff"), 
+         url('../fonts/GothamRounded-Bold.svg') format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamRounded";
+    src: url('../fonts/GothamRounded-Book.eot');
+    src: url('../fonts/GothamRounded-Book.otf') format("opentype"),
+         url('../fonts/GothamRounded-Book.woff') format("woff"),
+         url('../fonts/GothamRounded-Book.svg') format("svg"),
+         url('../fonts/GothamRoundedBook_21018.ttf')  format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamRounded";
+    src: url('../fonts/GothamRounded-Medium.eot');
+    src: url('../fonts/GothamRounded-Medium.otf') format("opentype"),
+         url('../fonts/GothamRounded-Medium.woff') format("woff"),
+         url('../fonts/GothamRounded-Medium.svg') format("svg"),
+         url('../fonts/GothamRoundedMedium_21022.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    font-family: "GothamRounded", sans-serif;
+}
+
+/* HEADER*/
+
+header {
+    background: url(../images/header-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 745px;   
+    width: 100%;
+    color: #fff;
+}
+
+.header-container{
+    width: 1152px;
+    margin: 0px auto;
+    position: relative;
+    height: 100%;
+}
+
+.main-menu{
+    width: 790px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+}
+
+.main-menu__list{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.main-menu__list li:nth-child(2){
+    margin-left: -10px;
+}
+
+.main-logo{
+    padding: 0px 26px;
+}
+
+.main-menu__list li:not(.main-logo){
+    padding-top: 22px;
+}
+
+.clearfix:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-link{
+    text-transform: uppercase;
+}
+
+.main-header{
+    text-align: center;
+    margin-top: -68px;
+    margin-right: -7px;
+    letter-spacing: 5.5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+.subheader{
+    font-weight: 500;
+    letter-spacing: 2.4px;
+    margin-right: 5px;
+    margin-bottom: 26px;
+}
+
+.btn{
+     text-transform: uppercase;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #000;
+}
+.btn-success{
+    border-radius: 3px;
+    background-color: #16a085;
+    color: #fff;
+    width: 166px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 18px 0;
+    letter-spacing: 2px;
+    margin-left: -4px;
+}
+
+.icon-bar{
+    position: absolute;
+    bottom: 27px;
+    left: 45.8%;
+}
+
+.icon-bar > li{
+    display: inline-block;
+}
+
+.ico{
+    background: url(../images/social-icons.png) no-repeat;
+}
+
+.tw-ico{
+    background-position: 0px 0px;
+    padding-right: 33px;
+    padding-bottom: 3px;
+}
+
+.flickr-ico{
+    background-position: -39px 0px;
+    padding-top: 1px;
+    padding-right:  33px;
+}
+
+.dribble-ico{
+    background-position: -77px 0px;
+    padding: 2px 37px 0px 0px;
+}
+
+/*PHOTO*/
+
+.photo{
+    background-color: #f5f6f7;
+}
+
+.photo-content{
+    width: 1152px;
+    margin: 0 auto;
+    background: url(../images/iPhone-bg.png) no-repeat;
+    background-position: 80% -43%;
+    height: 492px;
+    padding-left: 127px;
+}
+
+.section-header{
+    color: #16a085;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    line-height: 1.15;
+}
+
+.photo-header{
+    width: 380px;
+    padding-top: 111px;
+    margin-bottom: 40px;
+}
+
+.section-descr{
+    color: #373737;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 1.8px;
+}
+.photo-descr{
+    width: 463px;
+}
+
+.section-descr--bold{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-photo--mod{
+    width: 194px;
+    padding: 21px 0 16px 0px;
+    letter-spacing: 2.15px;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+
+/* DESIGN */
+
+.design{
+    background: url(../images/flat-iphone-bg.png) no-repeat;
+    background-position: 7% -246%;
+    height: 558px;
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.design-content{
+    float: right;
+    margin-right: 15px;
+    width: 434px;
+    margin-top: 143px;
+}
+.design-descr{
+    margin-top: 35px;
+    margin-left: 2px;
+    line-height: 1.9;
+}
+.btn-design--mod{
+    margin-top: 38px;
+    padding: 18px 0 18px 0px;
+    width: 192px;
+    letter-spacing: 2.2px;
+    margin-left: 0;
+}
+
+.slider-number{
+    font-size: 12px; 
+    font-weight: 700;
+    line-height: 22px; 
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+.angle-left{
+    margin-right: 13px;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+
+/* COMMUNITY */
+
+.community{
+    height: 483px;
+    background-color:  #f5f6f7;
+}
+
+.community-container{
+    margin: 0 auto;
+    width: 1152px;
+    padding-top: 121px;
+    position: relative;
+}
+
+.community-content, .community-slider{
+    float: left;
+}
+
+.community-content{
+    width: 182px;
+    text-align: center;
+    margin-right: 78px;
+    margin-top: 45px;
+    padding-left: 62px;
+}
+
+.community-header{
+    color: #373737;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 27px;
+    letter-spacing: 2.4px;
+}
+
+.community-descr{
+    color: #373737;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 18px;
+    line-height: 1.2;
+    margin-left: 1px;
+    letter-spacing: 1.5px;
+}
+
+.community-slider-pagination{
+    position: absolute;
+    right: 64px;
+    top: 88px;
+}
+
+.community-slider__img1{
+    margin-right: 21px;
+}
+
+.community-slider-pagination{
+    line-height: 2;
+}
+
+/* SUBSCRIBE */
+
+.subscribe{
+    background: url(../images/subscribe-bg.png) no-repeat;
+    background-size: cover;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribtion-header{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    letter-spacing: 3.5px;
+    margin-left: 7px;
+}
+.subscription-form{
+    font-size: 0;
+    margin-left: -5px;
+}
+
+.subscription-form input{
+    width: 257px;
+    padding: 20px 0px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+input[placeholder]{
+    font-family: "GothamRounded";
+    color: #373737;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 22px;
+    letter-spacing: 2.3px;
+}
+
+button[type="submit"]{
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #16a085;
+    width: 63px;
+    height: 59px;
+    vertical-align: bottom;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+button[type="submit"]:before{
+    background-image: url(../images/fa-check.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+	content:"";
+	width: 20px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+}
+
+/* DOWNLOAD */
+.download{
+    height: 396px;
+    background-color: #f5f6f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-content{
+    width: 846px;
+    text-transform: uppercase;
+    margin-top: -38px;
+}
+
+.download-header{
+    font-family: "GothamRounded";
+    color: #373737;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 2;
+    margin-left: 40px;
+}
+
+.download-descr{
+    font-family: "GothamRounded";
+    color: #373737;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1.8px;
+    width: 843px;
+    line-height: 1.9;
+    margin-bottom: 41px;
+    margin-left: 2px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    font-family: "GothamRounded";
+}
+
+.btn-apple, .btn-android{
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #1abc9c;
+    width: 296px;
+    margin: 0px 13px;
+    text-align: left;
+    position: relative;
+    padding: 20px 0px 19px 23px;
+    font-weight: 700;
+    font-family: "GothamRounded";
+    font-size: 16px;
+    letter-spacing: 2.4px;
+}
+
+.btn-android{
+    padding: 20px 0px 17px 30px;
+    letter-spacing: 3.9px;
+}
+
+.btn-android:after, .btn-apple:after{
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #16a085;
+    padding: 17px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.btn-apple:after{
+    font-family: "FontAwesome";
+    content: "\f179";
+}
+
+.btn-android:after{
+    font-family: "FontAwesome";
+    content: "\f17b";
+    font-size: 28px;
+    padding: 15px;
+    padding-left: 17px;
+}
+
+.footer-container{
+    width: 1024px;
+    height: 133px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav{
+    margin-top: -15px;
+}
+
+.nav-list{
+     line-height: 58px;
+}
+
+.nav-list > li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.nav-list__item > a{
+    color: #373737;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-list__item:after{
+    content: '|';
+    color:  #16a085;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 7px;
+    margin-right: 4px;
+}
+
+.nav-list__item:last-child:after{
+      content: '';
+}
+
+.copyright-text{   
+    color: #373737;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 2.1px;
+}
+
+.footer-logo__img{
+    width: 53px;
+    height: 53px;
+} 
